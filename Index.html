@@ -1,0 +1,46 @@
+  <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Airbnb Clone</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Zaloguj się</a></li>
+                <li><a href="#">Zarejestruj się</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="search-section">
+        <h2>Znajdź idealne miejsce na wypoczynek</h2>
+        <form id="search-form">
+            <input type="text" id="location" placeholder="Gdzie jedziesz?" required>
+            <input type="date" id="check-in" placeholder="Zameldowanie" required>
+            <input type="date" id="check-out" placeholder="Wymeldowanie" required>
+            <input type="number" id="guests" placeholder="Goście" required>
+            <button type="submit">Szukaj</button>
+        </form>
+    </section>
+
+    <section class="listings">
+        <h2>Popularne oferty</h2>
+        <div class="listing-grid" id="listing-grid">
+            <!-- Tutaj będą dynamicznie dodawane oferty -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Airbnb Clone. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
